@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44DF26322A4682F682E51A75 /* libPods-CustomVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C0C7387054E9F22A6B36AB /* libPods-CustomVideo.a */; };
 		EA1720311B6F5ACB00569ACA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1720301B6F5ACB00569ACA /* main.m */; };
 		EA1720341B6F5ACB00569ACA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1720331B6F5ACB00569ACA /* AppDelegate.m */; };
 		EA1720371B6F5ACB00569ACA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1720361B6F5ACB00569ACA /* ViewController.m */; };
@@ -14,6 +15,9 @@
 		EA17203C1B6F5ACB00569ACA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA17203B1B6F5ACB00569ACA /* Images.xcassets */; };
 		EA17203F1B6F5ACB00569ACA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA17203D1B6F5ACB00569ACA /* LaunchScreen.xib */; };
 		EA17204B1B6F5ACB00569ACA /* CustomVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA17204A1B6F5ACB00569ACA /* CustomVideoTests.m */; };
+		EAD592831B73770100C5BD35 /* YoutubePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD592781B73770100C5BD35 /* YoutubePlayer.m */; };
+		EAD5928A1B73770100C5BD35 /* YoutubePlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD592821B73770100C5BD35 /* YoutubePlayer.xib */; };
+		EAD5928C1B73772100C5BD35 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD5928B1B73772100C5BD35 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01C0C7387054E9F22A6B36AB /* libPods-CustomVideo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CustomVideo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E043029FDAAD17BCA6E42B /* Pods-CustomVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomVideo/Pods-CustomVideo.debug.xcconfig"; sourceTree = "<group>"; };
+		B1AEDA4BDC8B08A788F022F2 /* Pods-CustomVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomVideo/Pods-CustomVideo.release.xcconfig"; sourceTree = "<group>"; };
 		EA17202B1B6F5ACB00569ACA /* CustomVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA17202F1B6F5ACB00569ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA1720301B6F5ACB00569ACA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +47,11 @@
 		EA1720441B6F5ACB00569ACA /* CustomVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1720491B6F5ACB00569ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA17204A1B6F5ACB00569ACA /* CustomVideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomVideoTests.m; sourceTree = "<group>"; };
+		EAD592771B73770100C5BD35 /* YoutubePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoutubePlayer.h; sourceTree = "<group>"; };
+		EAD592781B73770100C5BD35 /* YoutubePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoutubePlayer.m; sourceTree = "<group>"; };
+		EAD592791B73770100C5BD35 /* YoutubePlayerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoutubePlayerProtocol.h; sourceTree = "<group>"; };
+		EAD592821B73770100C5BD35 /* YoutubePlayer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YoutubePlayer.xib; sourceTree = "<group>"; };
+		EAD5928B1B73772100C5BD35 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44DF26322A4682F682E51A75 /* libPods-CustomVideo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +73,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40E6FE48187E8204D0CD53C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55E043029FDAAD17BCA6E42B /* Pods-CustomVideo.debug.xcconfig */,
+				B1AEDA4BDC8B08A788F022F2 /* Pods-CustomVideo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		98D633B71886240A63C75ADD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01C0C7387054E9F22A6B36AB /* libPods-CustomVideo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA1720221B6F5ACB00569ACA = {
 			isa = PBXGroup;
 			children = (
 				EA17202D1B6F5ACB00569ACA /* CustomVideo */,
 				EA1720471B6F5ACB00569ACA /* CustomVideoTests */,
 				EA17202C1B6F5ACB00569ACA /* Products */,
+				40E6FE48187E8204D0CD53C4 /* Pods */,
+				98D633B71886240A63C75ADD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +113,7 @@
 		EA17202D1B6F5ACB00569ACA /* CustomVideo */ = {
 			isa = PBXGroup;
 			children = (
+				EAD592751B73770100C5BD35 /* YoutubePlayer */,
 				EA1720321B6F5ACB00569ACA /* AppDelegate.h */,
 				EA1720331B6F5ACB00569ACA /* AppDelegate.m */,
 				EA1720351B6F5ACB00569ACA /* ViewController.h */,
@@ -119,6 +152,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EAD592751B73770100C5BD35 /* YoutubePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				EAD592761B73770100C5BD35 /* controller */,
+				EAD5927A1B73770100C5BD35 /* resources */,
+				EAD592811B73770100C5BD35 /* view */,
+			);
+			path = YoutubePlayer;
+			sourceTree = "<group>";
+		};
+		EAD592761B73770100C5BD35 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				EAD592771B73770100C5BD35 /* YoutubePlayer.h */,
+				EAD592781B73770100C5BD35 /* YoutubePlayer.m */,
+				EAD592791B73770100C5BD35 /* YoutubePlayerProtocol.h */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		EAD5927A1B73770100C5BD35 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAD5928B1B73772100C5BD35 /* Media.xcassets */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		EAD592811B73770100C5BD35 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EAD592821B73770100C5BD35 /* YoutubePlayer.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA17204E1B6F5ACB00569ACA /* Build configuration list for PBXNativeTarget "CustomVideo" */;
 			buildPhases = (
+				AF2C77CDECF22B0CDC0D9347 /* Check Pods Manifest.lock */,
 				EA1720271B6F5ACB00569ACA /* Sources */,
 				EA1720281B6F5ACB00569ACA /* Frameworks */,
 				EA1720291B6F5ACB00569ACA /* Resources */,
+				9EF12389F307A9F41B50874F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +239,7 @@
 				TargetAttributes = {
 					EA17202A1B6F5ACB00569ACA = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 5ML7Q4S2R9;
 					};
 					EA1720431B6F5ACB00569ACA = {
 						CreatedOnToolsVersion = 6.4;
@@ -201,6 +273,8 @@
 			files = (
 				EA17203A1B6F5ACB00569ACA /* Main.storyboard in Resources */,
 				EA17203F1B6F5ACB00569ACA /* LaunchScreen.xib in Resources */,
+				EAD5928C1B73772100C5BD35 /* Media.xcassets in Resources */,
+				EAD5928A1B73770100C5BD35 /* YoutubePlayer.xib in Resources */,
 				EA17203C1B6F5ACB00569ACA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,11 +288,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9EF12389F307A9F41B50874F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomVideo/Pods-CustomVideo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF2C77CDECF22B0CDC0D9347 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA1720271B6F5ACB00569ACA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD592831B73770100C5BD35 /* YoutubePlayer.m in Sources */,
 				EA1720371B6F5ACB00569ACA /* ViewController.m in Sources */,
 				EA1720341B6F5ACB00569ACA /* AppDelegate.m in Sources */,
 				EA1720311B6F5ACB00569ACA /* main.m in Sources */,
@@ -347,21 +455,31 @@
 		};
 		EA17204F1B6F5ACB00569ACA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55E043029FDAAD17BCA6E42B /* Pods-CustomVideo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CustomVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		EA1720501B6F5ACB00569ACA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1AEDA4BDC8B08A788F022F2 /* Pods-CustomVideo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CustomVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -418,6 +536,7 @@
 				EA1720501B6F5ACB00569ACA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA1720511B6F5ACB00569ACA /* Build configuration list for PBXNativeTarget "CustomVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +545,7 @@
 				EA1720531B6F5ACB00569ACA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

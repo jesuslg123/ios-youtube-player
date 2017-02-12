@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YoutubePlayer">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgS-2u-HLZ" userLabel="ContentView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVG-5x-dAW" userLabel="PlayerView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K61-Bo-IQ4" userLabel="PreviewView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MlM-t2-73W" userLabel="PreviewImage">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="fxc-j4-qap" userLabel="PlayImage">
+                                    <rect key="frame" x="145" y="303.5" width="85" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="fxc-j4-qap" secondAttribute="height" multiplier="64:45" id="9BH-lO-nOV"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="centerX" secondItem="fxc-j4-qap" secondAttribute="centerX" id="Okb-7Q-dcA"/>
+                                <constraint firstAttribute="centerY" secondItem="fxc-j4-qap" secondAttribute="centerY" id="cy6-Ry-bvc"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fxc-j4-qap" secondAttribute="bottom" constant="20" id="dfk-tV-BwQ"/>
+                                <constraint firstItem="MlM-t2-73W" firstAttribute="leading" secondItem="K61-Bo-IQ4" secondAttribute="leading" id="eto-4T-2lQ"/>
+                                <constraint firstAttribute="trailing" secondItem="MlM-t2-73W" secondAttribute="trailing" id="fEI-EB-iCk"/>
+                                <constraint firstItem="fxc-j4-qap" firstAttribute="top" relation="greaterThanOrEqual" secondItem="K61-Bo-IQ4" secondAttribute="top" constant="20" id="h93-O2-3jw"/>
+                                <constraint firstAttribute="bottom" secondItem="MlM-t2-73W" secondAttribute="bottom" id="m6s-7J-Tl2"/>
+                                <constraint firstItem="MlM-t2-73W" firstAttribute="top" secondItem="K61-Bo-IQ4" secondAttribute="top" id="rsF-5q-fVC"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="K61-Bo-IQ4" firstAttribute="top" secondItem="wgS-2u-HLZ" secondAttribute="top" id="DNc-UH-FWU"/>
+                        <constraint firstItem="hVG-5x-dAW" firstAttribute="top" secondItem="wgS-2u-HLZ" secondAttribute="top" id="FYW-ei-tEp"/>
+                        <constraint firstAttribute="bottom" secondItem="K61-Bo-IQ4" secondAttribute="bottom" id="JG2-bT-2gn"/>
+                        <constraint firstAttribute="bottom" secondItem="hVG-5x-dAW" secondAttribute="bottom" id="Yex-8N-mYG"/>
+                        <constraint firstItem="hVG-5x-dAW" firstAttribute="leading" secondItem="wgS-2u-HLZ" secondAttribute="leading" id="asm-a8-G2i"/>
+                        <constraint firstItem="K61-Bo-IQ4" firstAttribute="leading" secondItem="wgS-2u-HLZ" secondAttribute="leading" id="ctT-kG-CPe"/>
+                        <constraint firstAttribute="trailing" secondItem="K61-Bo-IQ4" secondAttribute="trailing" id="kxx-U4-Kcr"/>
+                        <constraint firstAttribute="trailing" secondItem="hVG-5x-dAW" secondAttribute="trailing" id="nhD-ZD-U1a"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zX-lV-q1B">
+                    <rect key="frame" x="345" y="0.0" width="30" height="30"/>
+                    <accessibility key="accessibilityConfiguration" hint="Close" label="Cerrar"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="EUm-x2-ciQ"/>
+                        <constraint firstAttribute="width" constant="30" id="RGK-Vk-fch"/>
+                    </constraints>
+                    <state key="normal" image="close">
+                        <color key="titleColor" red="0.034757062792778015" green="0.31522077322006226" blue="0.81491315364837646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="closeView:" destination="iN0-l3-epB" eventType="touchUpInside" id="u4t-1i-C3b"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6D-O1-xpe" userLabel="State Button">
+                    <rect key="frame" x="300" y="0.0" width="30" height="30"/>
+                    <accessibility key="accessibilityConfiguration" hint="Close" label="Cerrar"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="UD7-oM-77V"/>
+                        <constraint firstAttribute="height" constant="30" id="zNJ-tW-CED"/>
+                    </constraints>
+                    <state key="normal" image="close">
+                        <color key="titleColor" red="0.034757062790000001" green="0.31522077320000003" blue="0.81491315360000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="closeView:" destination="iN0-l3-epB" eventType="touchUpInside" id="8L6-lt-cHx"/>
+                        <action selector="stateChangeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="7f2-jO-aDd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6zX-lV-q1B" secondAttribute="trailing" id="Cmg-ha-tJ6"/>
+                <constraint firstItem="wgS-2u-HLZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RIu-SB-BQf"/>
+                <constraint firstItem="l6D-O1-xpe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fOf-Dq-ktO"/>
+                <constraint firstAttribute="bottom" secondItem="wgS-2u-HLZ" secondAttribute="bottom" id="fxp-Xe-pzc"/>
+                <constraint firstItem="6zX-lV-q1B" firstAttribute="leading" secondItem="l6D-O1-xpe" secondAttribute="trailing" constant="15" id="hQB-eq-YPR"/>
+                <constraint firstItem="wgS-2u-HLZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tX0-Vq-PVn"/>
+                <constraint firstItem="6zX-lV-q1B" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uxl-2b-roK"/>
+                <constraint firstAttribute="trailing" secondItem="wgS-2u-HLZ" secondAttribute="trailing" id="y4A-Lv-T2g"/>
+            </constraints>
+            <connections>
+                <outlet property="closeButton" destination="6zX-lV-q1B" id="fbn-dm-txy"/>
+                <outlet property="playerView" destination="hVG-5x-dAW" id="Swf-84-6hl"/>
+                <outlet property="previewImageView" destination="MlM-t2-73W" id="l70-pZ-QUa"/>
+                <outlet property="previewView" destination="K61-Bo-IQ4" id="xfx-V9-my8"/>
+                <outlet property="rightButtonConstraint" destination="Cmg-ha-tJ6" id="86Z-eT-KqH"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="close" width="60" height="60"/>
+        <image name="play" width="60" height="60"/>
+    </resources>
+</document>
